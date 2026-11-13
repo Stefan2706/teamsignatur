@@ -1,0 +1,21 @@
+{
+  "policies": {
+    "ExtensionSettings": {
+      "teamsignatur@ts-scherer.com": {
+        "installation_mode": "force_installed",
+        "install_url": "https://github.com/Stefan2706/teamsignatur/releases/download/v0.9.0/teamsignatur-0.9.0.xpi"
+      }
+    },
+    "Preferences": {
+      "mail.identity.default.suppress_sigsep": { "Value": true, "Status": "default" }
+    },
+    "3rdparty": {
+      "Extensions": {
+        "teamsignatur@ts-scherer.com": {
+          "company": { "name": "Beispiel GmbH", "street": "Hauptstraße 12", "zip": "61250", "city": "Usingen",
+                       "phone": "+49 6081 9870", "website": "www.beispiel-gmbh.de", "design": "modern", "accent": "#0f9d9a" }
+        }
+      }
+    }
+  }
+}

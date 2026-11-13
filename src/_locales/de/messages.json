@@ -1,0 +1,280 @@
+{
+  "extensionName": {
+    "message": "TeamSignatur"
+  },
+  "extensionDescription": {
+    "message": "Einheitliche Firmen-E-Mail-Signaturen für Thunderbird – mit Logo, Pflichtangaben, Designvorlagen und zentraler Vorgabe durch die IT."
+  },
+  "actionTitle": {
+    "message": "TeamSignatur öffnen"
+  },
+  "actionLabel": {
+    "message": "Signatur"
+  },
+  "intro": {
+    "message": "Einheitliche Signaturen für alle E-Mail-Konten: Firmendaten und Design einmal festlegen, persönliche Daten ergänzen, übernehmen – fertig."
+  },
+  "secPerson": {
+    "message": "Ihre Daten"
+  },
+  "fName": {
+    "message": "Name"
+  },
+  "fTitle": {
+    "message": "Position"
+  },
+  "fDepartment": {
+    "message": "Abteilung"
+  },
+  "fPhone": {
+    "message": "Telefon (Durchwahl)"
+  },
+  "fMobile": {
+    "message": "Mobil"
+  },
+  "phPhoneCompany": {
+    "message": "leer = Zentrale"
+  },
+  "phName": {
+    "message": "Vorname Nachname"
+  },
+  "fromContacts": {
+    "message": "Aus dem Adressbuch übernehmen"
+  },
+  "secAccounts": {
+    "message": "Für diese E-Mail-Konten"
+  },
+  "secCompany": {
+    "message": "Firma"
+  },
+  "fCompany": {
+    "message": "Firmenname mit Rechtsform"
+  },
+  "phCompany": {
+    "message": "Beispiel GmbH"
+  },
+  "fStreet": {
+    "message": "Straße und Hausnummer"
+  },
+  "fZip": {
+    "message": "PLZ"
+  },
+  "fCity": {
+    "message": "Ort"
+  },
+  "fCountry": {
+    "message": "Land (optional)"
+  },
+  "fCompanyPhone": {
+    "message": "Telefon Zentrale"
+  },
+  "fWebsite": {
+    "message": "Website"
+  },
+  "fGreeting": {
+    "message": "Grußformel (leer = keine)"
+  },
+  "secDesign": {
+    "message": "Design"
+  },
+  "dClassic": {
+    "message": "Klassisch"
+  },
+  "dModern": {
+    "message": "Modern mit Logo"
+  },
+  "dCompact": {
+    "message": "Kompakt"
+  },
+  "fFont": {
+    "message": "Schrift"
+  },
+  "fFontSize": {
+    "message": "Schriftgröße (pt)"
+  },
+  "fAccent": {
+    "message": "Akzentfarbe"
+  },
+  "fLogo": {
+    "message": "Logo (PNG, JPG oder SVG)"
+  },
+  "logoRemove": {
+    "message": "Logo entfernen"
+  },
+  "fLogoWidth": {
+    "message": "Breite"
+  },
+  "secLegal": {
+    "message": "Pflichtangaben"
+  },
+  "legalNote": {
+    "message": "Für Kapitalgesellschaften wie GmbH oder UG sind in geschäftlichen E-Mails u. a. Rechtsform, Sitz, Registergericht, Registernummer und Geschäftsführung anzugeben. Bitte im Zweifel rechtlich prüfen lassen."
+  },
+  "fSeat": {
+    "message": "Sitz der Gesellschaft"
+  },
+  "fCourt": {
+    "message": "Registergericht"
+  },
+  "phCourt": {
+    "message": "Amtsgericht Bad Homburg"
+  },
+  "fRegister": {
+    "message": "Registernummer"
+  },
+  "fVatId": {
+    "message": "USt-IdNr."
+  },
+  "fManagers": {
+    "message": "Geschäftsführung"
+  },
+  "fDisclaimer": {
+    "message": "Zusatztext (optional, z. B. Vertraulichkeitshinweis)"
+  },
+  "secIT": {
+    "message": "Zentrale Vorgabe (für die IT)"
+  },
+  "itNote": {
+    "message": "Die Firmenvorlage kann zentral verteilt werden: per Thunderbird-Richtlinie (empfohlen) oder als JSON-Datei unter einer Adresse im Firmennetz. Mitarbeitende ergänzen dann nur noch ihre eigenen Daten."
+  },
+  "loadUrl": {
+    "message": "Vorlage laden"
+  },
+  "exportTitle": {
+    "message": "Vorlage exportieren / importieren"
+  },
+  "exportNote": {
+    "message": "Firmenvorlage als JSON – z. B. als Datei auf dem Webserver oder in Nextcloud ablegen:"
+  },
+  "policyNote": {
+    "message": "Oder in die Thunderbird-Richtlinie (policies.json) übernehmen – dann ist die Vorlage für Mitarbeitende gesperrt:"
+  },
+  "importNote": {
+    "message": "Vorlage importieren (JSON einfügen):"
+  },
+  "importBtn": {
+    "message": "Importieren"
+  },
+  "secPreview": {
+    "message": "Vorschau"
+  },
+  "autoApply": {
+    "message": "Bei Änderungen automatisch aktualisieren"
+  },
+  "apply": {
+    "message": "Signatur übernehmen"
+  },
+  "sepNote": {
+    "message": "Die Trennzeile „-- “ vor Signaturen kann ein Add-on nicht entfernen. Abschalten: Thunderbird-Einstellungen → Allgemein → Konfiguration bearbeiten → mail.identity.default.suppress_sigsep auf true setzen – oder zentral per Richtlinie."
+  },
+  "lockManaged": {
+    "message": "Die Firmenvorlage wird von Ihrer IT vorgegeben und kann hier nicht geändert werden."
+  },
+  "lockUrl": {
+    "message": "Die Firmenvorlage wird zentral geladen. Zum Bearbeiten das Feld „Zentrale Vorgabe“ leeren und „Vorlage laden“ klicken."
+  },
+  "contactNotFound": {
+    "message": "Kein Adressbuch-Eintrag für $EMAIL$ gefunden.",
+    "placeholders": {
+      "email": {
+        "content": "$1"
+      }
+    }
+  },
+  "contactLoaded": {
+    "message": "Daten aus dem Adressbuch übernommen."
+  },
+  "contactError": {
+    "message": "Adressbuch nicht lesbar: $ERR$",
+    "placeholders": {
+      "err": {
+        "content": "$1"
+      }
+    }
+  },
+  "logoLarge": {
+    "message": "Das Logo ist recht groß – ein kleineres Bild hält die E-Mails schlank."
+  },
+  "noIdentity": {
+    "message": "Bitte mindestens ein E-Mail-Konto auswählen."
+  },
+  "applied": {
+    "message": "Signatur übernommen."
+  },
+  "appliedTo": {
+    "message": "Zuletzt übernommen für: $LIST$",
+    "placeholders": {
+      "list": {
+        "content": "$1"
+      }
+    }
+  },
+  "applyError": {
+    "message": "Übernehmen fehlgeschlagen: $ERR$",
+    "placeholders": {
+      "err": {
+        "content": "$1"
+      }
+    }
+  },
+  "urlInvalid": {
+    "message": "Die Adresse ist ungültig."
+  },
+  "urlDenied": {
+    "message": "Ohne Zugriffsrecht kann die Vorlage nicht geladen werden."
+  },
+  "urlLoaded": {
+    "message": "Zentrale Vorlage geladen."
+  },
+  "urlFailed": {
+    "message": "Vorlage konnte nicht geladen werden – Adresse und Dateiinhalt prüfen."
+  },
+  "imported": {
+    "message": "Vorlage importiert."
+  },
+  "importError": {
+    "message": "Kein gültiges JSON mit „company“ gefunden."
+  },
+  "sigPhone": {
+    "message": "Tel."
+  },
+  "sigMobile": {
+    "message": "Mobil"
+  },
+  "sigEmail": {
+    "message": "E-Mail"
+  },
+  "sigSeat": {
+    "message": "Sitz"
+  },
+  "sigCourt": {
+    "message": "Registergericht"
+  },
+  "sigManagers": {
+    "message": "Geschäftsführung"
+  },
+  "sigVatId": {
+    "message": "USt-IdNr."
+  },
+  "fLogoPos": {
+    "message": "Position"
+  },
+  "posLeft": {
+    "message": "links neben dem Text"
+  },
+  "posTop": {
+    "message": "über dem Namen"
+  },
+  "posBottom": {
+    "message": "unter der Signatur"
+  },
+  "fGreetingPos": {
+    "message": "Grußformel bei Logo links"
+  },
+  "gpText": {
+    "message": "neben dem Logo, über dem Namen"
+  },
+  "gpAbove": {
+    "message": "über der ganzen Signatur"
+  }
+}

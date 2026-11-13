@@ -1,0 +1,280 @@
+{
+  "extensionName": {
+    "message": "Team Signature"
+  },
+  "extensionDescription": {
+    "message": "Consistent company email signatures for Thunderbird – with logo, legal details, design templates and central management by IT."
+  },
+  "actionTitle": {
+    "message": "Open Team Signature"
+  },
+  "actionLabel": {
+    "message": "Signature"
+  },
+  "intro": {
+    "message": "Consistent signatures for all email accounts: set company details and design once, add your personal details, apply – done."
+  },
+  "secPerson": {
+    "message": "Your details"
+  },
+  "fName": {
+    "message": "Name"
+  },
+  "fTitle": {
+    "message": "Job title"
+  },
+  "fDepartment": {
+    "message": "Department"
+  },
+  "fPhone": {
+    "message": "Phone (direct)"
+  },
+  "fMobile": {
+    "message": "Mobile"
+  },
+  "phPhoneCompany": {
+    "message": "empty = main number"
+  },
+  "phName": {
+    "message": "First Last"
+  },
+  "fromContacts": {
+    "message": "Fill in from address book"
+  },
+  "secAccounts": {
+    "message": "For these email accounts"
+  },
+  "secCompany": {
+    "message": "Company"
+  },
+  "fCompany": {
+    "message": "Company name incl. legal form"
+  },
+  "phCompany": {
+    "message": "Example Ltd."
+  },
+  "fStreet": {
+    "message": "Street"
+  },
+  "fZip": {
+    "message": "Postcode"
+  },
+  "fCity": {
+    "message": "City"
+  },
+  "fCountry": {
+    "message": "Country (optional)"
+  },
+  "fCompanyPhone": {
+    "message": "Main phone"
+  },
+  "fWebsite": {
+    "message": "Website"
+  },
+  "fGreeting": {
+    "message": "Closing (empty = none)"
+  },
+  "secDesign": {
+    "message": "Design"
+  },
+  "dClassic": {
+    "message": "Classic"
+  },
+  "dModern": {
+    "message": "Modern with logo"
+  },
+  "dCompact": {
+    "message": "Compact"
+  },
+  "fFont": {
+    "message": "Font"
+  },
+  "fFontSize": {
+    "message": "Font size (pt)"
+  },
+  "fAccent": {
+    "message": "Accent colour"
+  },
+  "fLogo": {
+    "message": "Logo (PNG, JPG or SVG)"
+  },
+  "logoRemove": {
+    "message": "Remove logo"
+  },
+  "fLogoWidth": {
+    "message": "Width"
+  },
+  "secLegal": {
+    "message": "Legal details"
+  },
+  "legalNote": {
+    "message": "Depending on the country and legal form, business emails must include details such as registered office, register court and number, and managing directors. Please check the legal requirements."
+  },
+  "fSeat": {
+    "message": "Registered office"
+  },
+  "fCourt": {
+    "message": "Register court"
+  },
+  "phCourt": {
+    "message": "Local court"
+  },
+  "fRegister": {
+    "message": "Registration number"
+  },
+  "fVatId": {
+    "message": "VAT ID"
+  },
+  "fManagers": {
+    "message": "Managing directors"
+  },
+  "fDisclaimer": {
+    "message": "Additional text (optional, e.g. confidentiality notice)"
+  },
+  "secIT": {
+    "message": "Central template (for IT)"
+  },
+  "itNote": {
+    "message": "The company template can be distributed centrally: via a Thunderbird policy (recommended) or as a JSON file at an address on the company network. Employees then only add their own details."
+  },
+  "loadUrl": {
+    "message": "Load template"
+  },
+  "exportTitle": {
+    "message": "Export / import template"
+  },
+  "exportNote": {
+    "message": "Company template as JSON – e.g. place it as a file on a web server or in Nextcloud:"
+  },
+  "policyNote": {
+    "message": "Or add it to the Thunderbird policy (policies.json) – employees then cannot change the template:"
+  },
+  "importNote": {
+    "message": "Import template (paste JSON):"
+  },
+  "importBtn": {
+    "message": "Import"
+  },
+  "secPreview": {
+    "message": "Preview"
+  },
+  "autoApply": {
+    "message": "Update automatically when something changes"
+  },
+  "apply": {
+    "message": "Apply signature"
+  },
+  "sepNote": {
+    "message": "Add-ons cannot remove the “-- ” separator line before signatures. To turn it off: Thunderbird settings → General → Config Editor → set mail.identity.default.suppress_sigsep to true – or centrally via policy."
+  },
+  "lockManaged": {
+    "message": "The company template is set by your IT department and cannot be changed here."
+  },
+  "lockUrl": {
+    "message": "The company template is loaded centrally. To edit it, clear the central template field and click “Load template”."
+  },
+  "contactNotFound": {
+    "message": "No address book entry found for $EMAIL$.",
+    "placeholders": {
+      "email": {
+        "content": "$1"
+      }
+    }
+  },
+  "contactLoaded": {
+    "message": "Details taken from the address book."
+  },
+  "contactError": {
+    "message": "Address book not readable: $ERR$",
+    "placeholders": {
+      "err": {
+        "content": "$1"
+      }
+    }
+  },
+  "logoLarge": {
+    "message": "The logo is quite large – a smaller image keeps emails lean."
+  },
+  "noIdentity": {
+    "message": "Please select at least one email account."
+  },
+  "applied": {
+    "message": "Signature applied."
+  },
+  "appliedTo": {
+    "message": "Last applied to: $LIST$",
+    "placeholders": {
+      "list": {
+        "content": "$1"
+      }
+    }
+  },
+  "applyError": {
+    "message": "Applying failed: $ERR$",
+    "placeholders": {
+      "err": {
+        "content": "$1"
+      }
+    }
+  },
+  "urlInvalid": {
+    "message": "The address is invalid."
+  },
+  "urlDenied": {
+    "message": "Without access permission the template cannot be loaded."
+  },
+  "urlLoaded": {
+    "message": "Central template loaded."
+  },
+  "urlFailed": {
+    "message": "Template could not be loaded – check the address and file content."
+  },
+  "imported": {
+    "message": "Template imported."
+  },
+  "importError": {
+    "message": "No valid JSON with “company” found."
+  },
+  "sigPhone": {
+    "message": "Phone"
+  },
+  "sigMobile": {
+    "message": "Mobile"
+  },
+  "sigEmail": {
+    "message": "Email"
+  },
+  "sigSeat": {
+    "message": "Registered office"
+  },
+  "sigCourt": {
+    "message": "Register court"
+  },
+  "sigManagers": {
+    "message": "Managing directors"
+  },
+  "sigVatId": {
+    "message": "VAT ID"
+  },
+  "fLogoPos": {
+    "message": "Position"
+  },
+  "posLeft": {
+    "message": "left of the text"
+  },
+  "posTop": {
+    "message": "above the name"
+  },
+  "posBottom": {
+    "message": "below the signature"
+  },
+  "fGreetingPos": {
+    "message": "Closing with logo on the left"
+  },
+  "gpText": {
+    "message": "next to the logo, above the name"
+  },
+  "gpAbove": {
+    "message": "above the whole signature"
+  }
+}

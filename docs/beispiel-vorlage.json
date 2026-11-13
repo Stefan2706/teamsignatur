@@ -1,0 +1,23 @@
+{
+  "company": {
+    "name": "Beispiel GmbH",
+    "street": "Hauptstraße 12",
+    "zip": "61250",
+    "city": "Usingen",
+    "phone": "+49 6081 9870",
+    "website": "www.beispiel-gmbh.de",
+    "seat": "Usingen",
+    "court": "Amtsgericht Bad Homburg",
+    "register": "HRB 12345",
+    "managers": "Anna Becker, Tom Wagner",
+    "vatId": "DE123456789",
+    "design": "modern",
+    "accent": "#0f9d9a",
+    "font": "Arial, Helvetica, sans-serif",
+    "fontSize": 10,
+    "greeting": "Mit freundlichen Grüßen",
+    "logo": "",
+    "logoWidth": 140,
+    "disclaimer": ""
+  }
+}

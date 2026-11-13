@@ -1,0 +1,18 @@
+{
+  "addons": {
+    "teamsignatur@ts-scherer.com": {
+      "updates": [
+        {
+          "version": "0.9.2",
+          "update_link": "https://github.com/Stefan2706/teamsignatur/releases/download/v0.9.2/teamsignatur-0.9.2.xpi",
+          "update_hash": "sha256:523cedd4ca9112f284597c2bb98da2f45cb983f24d94841ab7c08f559f8f906d",
+          "applications": {
+            "gecko": {
+              "strict_min_version": "128.0"
+            }
+          }
+        }
+      ]
+    }
+  }
+}
