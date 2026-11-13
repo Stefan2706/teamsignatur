@@ -4,6 +4,16 @@
 Firmendaten, Logo, Pflichtangaben und Design einmal festlegen, persönliche Daten
 ergänzen, übernehmen. Die IT kann die Firmenvorlage zentral vorgeben.
 
+**So kommt die Signatur beim Empfänger an** (hier in Gmail-ähnlicher Ansicht):
+
+![Signatur beim Empfänger](docs/screenshots/02-empfaengeransicht.png)
+
+**Drei Designs zur Auswahl** – Logo links, oben oder unten:
+
+![Designvarianten](docs/screenshots/03-designs.png)
+
+**Einstellungen mit Live-Vorschau:**
+
 ![Einstellungen und Vorschau](docs/screenshots/01-einstellungen.png)
 
 > ⚠️ **Beta.** Vorhandene Signaturen werden beim Übernehmen ersetzt – bitte vorher
