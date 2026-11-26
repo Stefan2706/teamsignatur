@@ -129,7 +129,7 @@
     "message": "Geschäftsführung"
   },
   "fDisclaimer": {
-    "message": "Zusatztext (optional, z. B. Vertraulichkeitshinweis)"
+    "message": "Zusatztext (optional, z. B. Vertraulichkeitshinweis) – **Text** wird fett"
   },
   "secIT": {
     "message": "Zentrale Vorgabe (für die IT)"
@@ -258,6 +258,9 @@
   },
   "fLogoPos": {
     "message": "Position"
+  },
+  "posMiddle": {
+    "message": "zwischen Name und Firma"
   },
   "posLeft": {
     "message": "links neben dem Text"
