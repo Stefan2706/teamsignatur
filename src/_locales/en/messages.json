@@ -129,7 +129,7 @@
     "message": "Managing directors"
   },
   "fDisclaimer": {
-    "message": "Additional text (optional, e.g. confidentiality notice)"
+    "message": "Additional text (optional, e.g. confidentiality notice) – **text** becomes bold"
   },
   "secIT": {
     "message": "Central template (for IT)"
@@ -258,6 +258,9 @@
   },
   "fLogoPos": {
     "message": "Position"
+  },
+  "posMiddle": {
+    "message": "between name and company"
   },
   "posLeft": {
     "message": "left of the text"
