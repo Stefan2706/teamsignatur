@@ -11,11 +11,13 @@ var TeamSig = (() => {
     name: "", street: "", zip: "", city: "", country: "", phone: "", website: "",
     seat: "", court: "", register: "", managers: "", vatId: "",
     disclaimer: "", logo: "", logoWidth: 140, accent: "#2f6fb5",
-    design: "classic", logoPosition: "left", greetingPosition: "above", font: "Arial, Helvetica, sans-serif", fontSize: 10, greeting: "Mit freundlichen Grüßen",
+    design: "classic", logoPosition: "middle", greetingPosition: "text", font: "Arial, Helvetica, sans-serif", fontSize: 10, greeting: "Mit freundlichen Grüßen",
   };
   const DEFAULT_PERSON = { name: "", title: "", department: "", phone: "", mobile: "" };
 
   const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const escBr = s => esc(String(s ?? "").replace(/\r\n?/g, "\n").trim()).replace(/\n/g, "<br>")
+    .replace(/\*\*([^*]+?)\*\*/g, "<b>$1</b>");
   const join = (parts, sep) => parts.filter(p => p && String(p).trim()).join(sep);
   const tel = n => String(n || "").replace(/[^\d+]/g, "");
   const webHref = w => (/^https?:\/\//i.test(w) ? w : `https://${w}`);
@@ -26,7 +28,7 @@ var TeamSig = (() => {
     const p = { ...DEFAULT_PERSON, ...person };
     const L = { phone: "Tel.", mobile: "Mobil", email: "E-Mail", seat: "Sitz", court: "Registergericht",
       managers: "Geschäftsführung", vatId: "USt-IdNr.", ...labels };
-    const link = (href, text) => `<a href="${esc(href)}" style="color:${esc(c.accent)};text-decoration:none">${esc(text)}</a>`;
+    const link = (href, text) => `<a href="${esc(href)}" style="font-family:${esc(c.font)};color:${esc(c.accent)};text-decoration:none">${esc(text)}</a>`;
 
     const roleLine = join([esc(p.title), esc(p.department)], " | ");
     const addressLine = join([esc(c.street), join([esc(c.zip), esc(c.city)], " "), esc(c.country)], " · ");
@@ -56,27 +58,29 @@ var TeamSig = (() => {
     const fs = Number(c.fontSize) || 10;
     const base = `font-family:${esc(c.font)};font-size:${fs}pt;line-height:1.4;color:#333333`;
     const small = `font-size:${Math.max(7, fs - 2)}pt;color:#888888;line-height:1.35`;
-    const greeting = c.greeting ? `<p style="margin:0 0 10px 0">${esc(c.greeting)}</p>` : "";
-    const name = `<strong style="color:${esc(c.accent)};font-size:${fs + 1}pt">${esc(p.name)}</strong>`;
-    const firm = `<strong>${esc(c.name)}</strong>`;
+    const greeting = c.greeting ? `<p style="margin:0 0 10px 0;font-family:${esc(c.font)}">${esc(c.greeting)}</p>` : "";
+    const name = `<strong style="font-family:${esc(c.font)};color:${esc(c.accent)};font-size:${fs + 1}pt">${esc(p.name)}</strong>`;
+    const firm = `<strong style="font-family:${esc(c.font)}">${esc(c.name)}</strong>`;
     const bar = c.design === "modern";
+    const pos = ["left", "top", "bottom", "middle"].includes(c.logoPosition) ? c.logoPosition : "middle";
+    // Logo zwischen Name/Funktion und Firmenblock (wie in der TS-Scherer-Vorlage)
+    const midLogo = x.logo && pos === "middle" ? `<div style="margin:10px 0">${x.logo}</div>` : "";
 
     // Textblock je Design
     const body = c.design === "compact"
-      ? `${name}${x.roleLine ? ` · ${x.roleLine}` : ""} · ${firm}<br>${join([x.phoneLine, x.webLine], " · ")}`
-      : `${name}<br>${x.roleLine ? `${x.roleLine}<br>` : ""}${c.design === "classic" ? "<br>" : ""}` +
+      ? `${name}${x.roleLine ? ` · ${x.roleLine}` : ""}${midLogo}${midLogo ? "" : " · "}${firm}<br>${join([x.phoneLine, x.webLine], " · ")}`
+      : `${name}<br>${x.roleLine ? `${x.roleLine}<br>` : ""}${midLogo || (c.design === "classic" ? "<br>" : "")}` +
         `${firm}<br>${x.addressLine ? `${x.addressLine}<br>` : ""}${x.phoneLine ? `${x.phoneLine}<br>` : ""}${x.webLine}`;
     const textBlock = bar
       ? `<div style="border-left:3px solid ${esc(c.accent)};padding-left:12px">${body}</div>`
       : body;
 
-    // Logo links, oben oder unten
-    const pos = ["left", "top", "bottom"].includes(c.logoPosition) ? c.logoPosition : "left";
+    // Logo links, oben, unten oder zwischen Name und Firma (dann schon im Textblock)
     let main = textBlock;
     let top = greeting;
     if (x.logo && pos === "left") {
       // Grußformel wahlweise in der Textspalte neben dem Logo
-      const inText = c.greetingPosition === "text";
+      const inText = c.greetingPosition !== "above";
       if (inText) top = "";
       main = `<table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse"><tr>` +
         `<td style="padding:0 16px 0 0;vertical-align:middle">${x.logo}</td>` +
@@ -84,12 +88,12 @@ var TeamSig = (() => {
         `${inText ? greeting : ""}${body}</td></tr></table>`;
     } else if (x.logo && pos === "top") {
       main = `<div style="margin:0 0 10px 0">${x.logo}</div>${textBlock}`;
-    } else if (x.logo) {
+    } else if (x.logo && pos === "bottom") {
       main = `${textBlock}<div style="margin:10px 0 0 0">${x.logo}</div>`;
     }
 
     const legal = join([x.legal ? `<div style="${small}">${x.legal}</div>` : "",
-      c.disclaimer ? `<div style="${small};margin-top:4px">${esc(c.disclaimer)}</div>` : ""], "");
+      c.disclaimer ? `<div style="${small};margin-top:4px">${escBr(c.disclaimer)}</div>` : ""], "");
     const legalBlock = !legal ? ""
       : c.design === "classic"
         ? `<div style="border-top:1px solid #dddddd;margin-top:10px;padding-top:6px">${legal}</div>`
