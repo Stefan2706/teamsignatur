@@ -8,7 +8,7 @@ ergänzen, übernehmen. Die IT kann die Firmenvorlage zentral vorgeben.
 
 ![Signatur beim Empfänger](docs/screenshots/02-empfaengeransicht.png)
 
-**Drei Designs zur Auswahl** – Logo links, oben oder unten:
+**Drei Designs zur Auswahl** – Logo links, oben, unten oder zwischen Name und Firma:
 
 ![Designvarianten](docs/screenshots/03-designs.png)
 

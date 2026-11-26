@@ -11,6 +11,16 @@
               "strict_min_version": "128.0"
             }
           }
+        },
+        {
+          "version": "0.9.5",
+          "update_link": "https://github.com/Stefan2706/teamsignatur/releases/download/v0.9.5/teamsignatur-0.9.5.xpi",
+          "update_hash": "sha256:7c0c2c26750a7b8bc33d6ded6135e3656f0f54df5ca6a05805302e5b82c17b98",
+          "applications": {
+            "gecko": {
+              "strict_min_version": "128.0"
+            }
+          }
         }
       ]
     }
